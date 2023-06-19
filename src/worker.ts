@@ -27,6 +27,9 @@ export default {
 		return new Response(body, {
 			headers: {
 				"content-type": "image/webp",
+				"cache-control": "no-cache, no-store, must-revalidate",
+				"pragma": "no-cache",
+				"expires": "0",
 			},
 		});
 	},
